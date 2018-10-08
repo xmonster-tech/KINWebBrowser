@@ -155,7 +155,7 @@ static void *KINWebBrowserContext = &KINWebBrowserContext;
     [super viewWillAppear:animated];
     
     [self.navigationController setNavigationBarHidden:NO animated:YES];
-    [self.navigationController setToolbarHidden:NO animated:YES];
+    // [self.navigationController setToolbarHidden:NO animated:YES];
     
     [self.navigationController.navigationBar addSubview:self.progressView];
     
@@ -167,7 +167,7 @@ static void *KINWebBrowserContext = &KINWebBrowserContext;
     
     [self.navigationController setNavigationBarHidden:self.previousNavigationControllerNavigationBarHidden animated:animated];
     
-    [self.navigationController setToolbarHidden:self.previousNavigationControllerToolbarHidden animated:animated];
+    // [self.navigationController setToolbarHidden:self.previousNavigationControllerToolbarHidden animated:animated];
     
     [self.uiWebView setDelegate:nil];
     [self.progressView removeFromSuperview];
